@@ -1,26 +1,16 @@
 :root {
-    --main-color-site: #212121;
-    --main-title-color: #FFFFFF;
-    --second-title-color: #212121;
-    --third-title-color: #212121;
-    --first-text-color: #757575;
-    --location-text-color: #FFFFFF;
-    --header-text-color: #212121;
-    --logo-text-color: #000000;
-    --logo-footer-color: #FFFFFF;
-    --header-hover-color: #2196F3;
-    --header-data-color: #757575;
-    --footer-data-color: rgba(255, 255, 255, 0.6);
-    --button-text-color: #FFFFFF;
-    --button-background-color: #2196F3;
-    --background-dask-color: #2F303A;
-    --background-footer-color: #2F303A;
+    --clr-white: #FFFFFF;
+    --clr-grey: #212121;
+    --clr-grey-1:#2F303A;
+    --clr-grey-2: #757575;
+    --clr-grey-3:rgba(255, 255, 255, 0.6);
+    --clr-black: #000000;
+    --clr-hover: #2196F3;
 }
 body {
     font-family: 'Roboto';
-    color: var(--main-color-site);
+    color: var(--clr-grey);
 }
-
 .list {
     list-style: none;
 }
@@ -46,28 +36,31 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--logo-text-color);
+    color: var(--clr-hover);
 }
 .header-logo span {
-    color: var(--header-hover-color);
+    color: var(--clr-black);
 }
 .header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--header-text-color);
+    color: var(--clr-grey);
+}
+.active > .header-link {
+    color: var(--clr-hover);
 }
 .header-link:hover,
 .header-link:focus {
-    color: var(--header-hover-color);
+    color: var(--clr-hover);
 }
 .header-data {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--header-data-color);
+    color: var(--clr-grey-2);
 }
 .header-data:hover,
 .header-data:focus {
@@ -76,7 +69,7 @@ body {
 
 /* --------------- Wrapper --------------- */
 .wrapper {
-    background-color: var(--background-dask-color);
+    background-color: var(--clr-grey-1);
 }
 .wrapper-title {
     font-weight: 900;
@@ -85,7 +78,7 @@ body {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--main-title-color);
+    color: var(--clr-white);
 }
 .wrapper-btn {
     font-family: Roboto;
@@ -96,10 +89,10 @@ body {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--button-text-color);
+    color: var(--clr-white);
 
     border: none;
-    background-color: var(--button-background-color);
+    background-color: var(--clr-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px; 
 
@@ -113,7 +106,7 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--second-title-color);
+    color: var(--clr-grey);
 }
 .about-subtitle {
     font-weight: 700;
@@ -121,14 +114,14 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--third-title-color);
+    color: var(--clr-grey);
 
 }
 .about-subtext {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--first-text-color);
+    color: var(--clr-grey-2);
 }
 
 /* --------------- Business --------------- */
@@ -138,7 +131,7 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--second-title-color);
+    color: var(--clr-grey);
 }
 
 /* --------------- Team --------------- */
@@ -148,14 +141,14 @@ body {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--second-title-color);
+    color: var(--clr-grey);
 }
 .team {
     background-color: #F5F4FA;
 }
 
 .team-item {
-    background-color: #FFFFFF;
+    background-color: var(--clr-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
@@ -166,19 +159,19 @@ body {
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--third-title-color);
+    color: var(--clr-grey);
 }
 .team-job {
     font-size: 16px;
     line-height: 1.14; 
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--first-text-color);
+    color: var(--clr-grey-2);
 }
 
 /* --------------- FOTTER --------------- */
 .footer {
-    background-color: var(--background-footer-color);
+    background-color: var(--clr-grey-1);
 }
 .footer-logo {
     font-family: Raleway;
@@ -186,10 +179,10 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-    color: var(--logo-footer-color);
+    color: var(--clr-white);
 }
 .footer-logo span {
-    color: var(--header-hover-color);
+    color: var(--clr-hover);
 }
 .footer-list {
     font-style: normal;
@@ -198,11 +191,55 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--location-text-color);
+    color: var(--clr-white);
 }
 .footer-date {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--footer-data-color);
+    color: var(--clr-grey-3);
+}
+
+/* --------------- Categories --------------- */
+
+.categorie-item {
+    margin-bottom: 6px;
+}
+.categorie-link {
+    background: #F5F4FA;
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--clr-grey);
+    padding: 6px 22px;
+}
+.categorie-link:hover,
+.categorie-link:focus{
+    background: var(--clr-hover);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: var(--clr-white);
+}
+
+/* --------------- Collection --------------- */
+.collection-item {
+    background: var(--clr-white);
+    border: 1px solid #EEEEEE;
+}
+.collection-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--clr-grey);
+}
+.collection-meaning {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--clr-grey-2);
 }
